@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/* main content dividing css starts */
+.sidebar {
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	z-index:2;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto; 
+	border-right:4px solid var(--light-outline-color);
+	width: 250px;
+	font-size:15px;
+	background:var(--menu-bg-color);
+	transition:all 0.5s ease;
+	}
+.main.dark{
+	background:rgba(0,0,0,.6);
+	transition:background 0.5s;
+	z-index:1;
+}
+.sidebar.active{
+	margin-left:0px;
+    transition:all 0.3s ease;
+}
+.main{
+	padding-right: 20px;
+	height:auto;
+	padding-bottom:20px;
+	padding-top:20px; 
+	padding-left: 270px;
+	}
+#menu-btn{
+	position:fixed;
+	top:15px;
+	right:15px;
+	font-size:23px;
+	display:none;
+	color:var(--light-outline-color);
+	z-index:2;
+}
+
+@media (max-width: 768px){
+	.main{
+	padding-left:20px;
+	}
+	.sidebar
+	{
+	margin-left:-250px;
+	}
+	#menu-btn{
+	display:block;
+	}
+	}
+/* main content dividing css ends */
+/* Side bar css strts from here */
+.profile{
+	height:auto;
+	width:100%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:15px;
+	border-bottom:2px solid var(--light-outline-color);
+}
+.profile img{
+	width:17%;
+	border-radius:50%;
+	border:2px solid var(--light-outline-color);
+}
+.menu-p{
+	margin:10px 10px;
+	background:var(--btn-light);
+	padding:15px 5px;
+	display:block;
+	border-radius:3px;
+	color:var(--light-text-color);
+}
+.menu-p:hover{
+	background:var(--light-outline-color);
+	transition:background 1s;
+	text-decoration:none;
+	color:var(--menu-bg-color);
+}
+/* Side bar css ends here */
+/* content css starts from here */
+.dotted-border{
+	margin:20px auto;
+	width:15%;
+	border-bottom:3px solid var(--light-outline-color);
+	
+}
+.dashboard{
+	width:80%;
+	margin:20px auto;
+	height:auto;
+}
+.dashboard-div{
+	height:100%;
+	width:80%;
+	padding:15% 10%;
+	margin:0px auto;
+	box-shadow:1px 0px 5px var(--btn-color);
+	border-radius:3px;
+}
+.dashboard-div:hover{
+	background:var(--light-outline-color);
+	transition:background 1s;
+}
+.dashboard-div:hover .dashboard-icon,.dashboard-div:hover .dashboard-a-link{
+	color:white;
+	transition:color .5s;
+}
+.dashboard-icon{
+	display:inline-block;
+	height:60px;
+	padding:5px 0px;
+	width:60px;
+	font-size:40px;
+	color:var(--light-outline-color);
+}
+.dashboard-a-link{
+	color:var(--menu-bg-color);
+	font-weight:bold;
+}
+/* content css ends here */

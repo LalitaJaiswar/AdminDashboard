@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+body{
+	background:linear-gradient(to bottom right, var(--btn-color),var(--light-text-color));
+	min-width:350px;
+}
+#login-div{
+	margin:45% auto;
+	padding:20px;
+	background:white;
+	border-radius:3px;
+	border:2px solid var(--outline-color);
+	font-size:13px;
+	text-align:center;
+}
+#tbl-div{
+	width:100%;
+	margin:0px auto;
+	margin-bottom:10px;
+}
+#tbl-div td{
+	height:50px;
+}
+.txt{
+	height:40px;
+	padding:2%;
+	width:90%;
+	border:1px solid var(--outline-color);
+	border-radius:3px;
+}
+.btn{
+	height:40px;
+	padding:2%;
+	width:90%;
+	color:var(--light-text-color);
+	background:var(--btn-color);
+}
+input:focus{
+	outline:none;
+	border-radius:3px;
+}
+
+/* raise.jsp css starts from here */
+#outer{
+	margin:18% auto;
+	padding:20px;
+	background:white;
+	border-radius:3px;
+	border:2px solid var(--outline-color);
+	font-size:14px;
+}
+.txtDescription{
+	width:90%;
+	border:1px solid var(--outline-color);
+	border-radius:3px;
+	resize:none;
+	margin-bottom:10px;
+}
+.txtDescription:focus,select:focus{
+	outline:none;
+}
+/* raise.jsp css ends here */

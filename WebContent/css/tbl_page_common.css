@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+.tbl-outer{
+width:95%;
+/* transform: rotateX(180deg);*/
+overflow-x: auto;
+margin:10px auto;
+height:auto;
+}
+.ticket-tbl{
+	width:100%;
+	font-size:15px;
+	/*transform: rotateX(180deg);*/
+	border-bottom:1px solid var(--btn-color);
+}
+.ticket-tbl th{
+	border:2px solid var(--btn-color);
+	padding:10px;
+}
+.ticket-tbl tr:nth-child(even) {
+	background-color: var(--tbl-bg-color);
+}
+.ticket-tbl td{
+	border-left:1px solid var(--btn-color);
+	border-right:1px solid var(--btn-color);
+	padding:10px;
+}
+.btn{
+	cursor:pointer;
+	padding:5px 10px !important;
+	font-size:14px !important;
+	color:var(--light-text-color);
+	background:var(--btn-color);
+}
+.btn:hover{
+	background:var(--light-outline-color);
+	color:var(--dark-gray);
+	transition:background 1s;
+}
+/* absolute div css starts */
+.editor{
+	width:40%;
+	position:fixed;
+	left:0;
+	right:0;
+	top:20%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width:300px;
+	padding:20px;
+	background:var(--shadow-color);
+	display:none;
+	text-align:center;
+	overflow-x:scroll;
+	
+}
+.txtDescription{
+	width:90%;
+	border:1px solid var(--outline-color);
+	border-radius:3px;
+	resize:none;
+	padding:5px;
+}
+/* absolute div css ends */

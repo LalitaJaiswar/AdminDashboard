@@ -1,0 +1,44 @@
+:root{
+	--btn-color:#008577;
+	--btn-light:#089E8F;
+	--menu-color:#089E8F;
+	--outline-color:#45D6C8;
+	--light-outline-color:#6BE3D7;
+	--tbl-bg-color:#C3F7F2;
+	--light-text-color:white;
+	--menu-bg-color:#263238;
+	--shadow-color:#ddd;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	transition:background 0.5s;
+}
+a:hover{
+	text-decoration:none;
+	color:var(--light-text-color);
+}
+/* Responsiveness for tab view starts from here */
+@media (max-width: 768px){
+	h3,h4{
+	font-size:20px;
+	}
+	p,table,tr,td,input{
+	font-size:14px !important;
+	}
+	.sidebar a{
+	font-size:13px;
+	}
+}
+/* Responsiveness for tab view ends here */
+
+/* Responsiveness for mobile view starts from here */
+@media (max-width: 400px){
+	p,table,tr,td,input{
+	font-size:13px !important;
+	}
+	.sidebar{
+	width:50% !important;
+	}
+}
+
+/* Responsiveness for mobile view ends here */

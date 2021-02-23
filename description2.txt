@@ -1,0 +1,27 @@
+								
+								Administrator Dashboard
+							   -------------------------
+							   
+	Required functionalities: An administrator should be able to view:
+	
+	1. Received Tickets
+	2. Completed Tickets
+	3. Closed Tickets
+	4. Lapsed Tickets
+	5. Breached SLA(Service Level Agreement)
+	6. Total Spent Hours
+	
+	Note: For Service Level Agreement(SLA), I have considered the following rules:
+	
+	1. If a ticket is raised then it should be resolved within the duration of 3 days.
+	2. If a ticket is not resolved within 3 days then it will be considered as 
+	   breaching of SLA.
+	
+	Languages Used:
+	Java, HTML, CSS, JavaScript, JQuery, Bootstrap, SQL
+	
+	Software Used:
+	Eclipse, Oracle 10g, Apache Tomcat
+	
+	
+	
